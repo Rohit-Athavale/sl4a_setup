@@ -2,9 +2,13 @@ SL4A setup
 
 
 This setup will guide you to setting up Scripting Layer for Android on your device. 
+
 You can execute python scripts and access the python #interpreter with this app.
-You can visit http://code.google.com/p/android-scripting/wiki/Tutorials for more info
-Steps 1-8 are the steps for installing the Android SDK.Skip these if you already have it or don't need it
+
+You can visit http://code.google.com/p/android-scripting/wiki/Tutorials for more info.
+
+Steps 1-8 are the steps for installing the Android SDK.Skip these if you already have it or don't need it.
+
 Steps 9-12 are to install the SL4A setup
 
 
@@ -68,26 +72,6 @@ If you see no device id ,it means your device is not successfully connected.Chec
 
 Or download the latest apk from http://code.google.com/p/android-scripting/downloads/list and install it or install it from the android store.
 
-
-10.After that to install some sample scripts,open to the Python For Android App in your installed apps on your phone/tablet
- and press the 'Install' button upon opening the Python For Android app.
-
-
-8.After this,when you perform an adb command you will be able to see your device.To test this you can try :
-	
-	user@ubuntu:$ adb devices
-	List of devices attached 
-	D025A0A023970L5C	device
-
-If you see no device id ,it means your device is not successfully connected.Check 51-android.rules .
-
-
-9.Install the Python For Android apk and the SL4A(Scripting Layer For Android) apk as follows:
-
-	user@ubuntu:folder-containing-these-apk$adb install PythonForAndroid_r5.apk
-	user@ubuntu:folder-containing-these-apk$adb install sl4a_r6.apk
-
-Or download the latest apk from http://code.google.com/p/android-scripting/downloads/list and install it or install it from the android store
 
 10.After that to install some sample scripts,open to the Python For Android App in your installed apps on your phone/tablet
  and press the 'Install' button upon opening the Python For Android app.
