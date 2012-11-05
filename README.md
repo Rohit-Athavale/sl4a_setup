@@ -34,13 +34,15 @@ Steps 9-12 are to install the SL4A setup
 7.To get access to you android device you must first modify the udev rules:
     Please visit http://developer.android.com/tools/device.html#VendorIds first and read steps 2-3.
     Say your phone is LG and your look up the list you see its vendor id as 1004.Then ,
-	A)Login as root(su) and create the file : /etc/udev/rules.d/51-android.rules and add the following to its contents : 
+A)Login as root(su) and create the file : /etc/udev/rules.d/51-android.rules and add the following to its contents : 
 	
-	"SUBSYSTEM=="usb", ATTR{idVendor}=="1004", MODE="0666", GROUP="plugdev". Then,
-	$chmod +x /etc/udev/rules.d/51-android.rules
+	"SUBSYSTEM=="usb", ATTR{idVendor}=="1004", MODE="0666", GROUP="plugdev". 
+
+Then,make the 51-android.rules executable .
+$chmod +x /etc/udev/rules.d/51-android.rules
 	
-	B)Since the vendor id is 1004(for LG)
-	$echo "0x1004" >> ~/.android/adb_usb.ini
+B)Since the vendor id is 1004(for LG).
+$echo "0x1004" >> ~/.android/adb_usb.ini
 
 
 Also visit http://blog.apkudo.com/2012/08/21/one-true-adb_usb-ini-to-rule-them-all/ for all devices.
